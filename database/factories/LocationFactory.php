@@ -15,6 +15,7 @@ class LocationFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
+            'featured_image' => 'https://picsum.photos/800/500',
         ];
     }
 }

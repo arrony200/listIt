@@ -17,7 +17,7 @@ class PropertyFactory extends Factory
         return [
             'name' => $this->faker->sentence,
           //  'featured_image' => $this->faker->imageUrl($width = 640, $height = 480),
-            'featured_image' => 'https://picsum.photos/200/300',
+            'featured_image' => 'https://picsum.photos/800/500',
             'location_id' => Location::all()->random()->id,
             'price' => rand(100000,500000),
             'status' => rand(0,1),
