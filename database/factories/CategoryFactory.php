@@ -15,6 +15,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
+            'image' => 'https://picsum.photos/175/175',
         ];
     }
 }

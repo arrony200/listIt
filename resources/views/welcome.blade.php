@@ -121,7 +121,7 @@
                     <p>{{$testimonial->review}}</p>
                 </div>
                 <div class="review-box-footer">
-                    <img src="https://listit.smartdemowp.com/wp-content/uploads/review-1-e1664077769781.png"/>
+                    <img src="{{$testimonial->image}}"/>
                     <div>
                         <h5>{{$testimonial->name}}</h5>
                         <h6>{{$testimonial->designation}}</h6>
@@ -134,6 +134,23 @@
 </section>
 
 
-
+<section class="newsletter-section">
+    <h1>Subscribe to Newsletter</h1>
+    <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing sed do eiusmod tempor incididunt labore
+    </p>
+    <form class="subscription-form">
+        <div class="email-input-wrapper">
+            <span class="email-icon"><i class="fas fa-envelope"></i></span>
+            <input 
+                type="email" 
+                class="email-input" 
+                placeholder="Enter your email"
+                required
+            >
+        </div>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+</section>
 
 </x-guest-layout>

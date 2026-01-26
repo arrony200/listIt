@@ -23,7 +23,6 @@
                             <ul class="sub-menu">
                                 <li><a href="{{route('categories')}}">Categories</a></li>
                                 <li><a href="{{route('pricing')}}">Pricing</a></li>
-                                <li><a href="{{route('page','about-us')}}">About Us</a></li>
                                 <li><a href="{{route('page','about-us')}}">Blog</a></li>
                             </ul>
                         </li>
@@ -33,7 +32,7 @@
                 </nav>
             </div>
             <div class="btn-box">
-                <a href="{{route('home')}}" class="sign-in bgvg"><i class="las la-user"></i>Sign In</a>
+                <a href="{{route('home')}}/login" class="sign-in bgvg"><i class="las la-user"></i>Sign In</a>
                 <div class="lang">
                     <span>EN</span>
                     <ul>
@@ -42,7 +41,7 @@
                         <li><a href="#">FR</a></li>
                     </ul>
                 </div>
-                <a href="https://listit.smartdemowp.com/login-page/" class="theme-btn-one">Post Your Ads</a>
+                <a href="/login" class="theme-btn-one">Post Your Ads</a>
             </div>
     </div>
     </div>

@@ -1,26 +1,39 @@
 <x-guest-layout>
-    <div class="page-title">
+    <section class="page-title page-breadcrumb">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <h2 class="ipt-title">Property 
-                       @if(request('type') == 0 ) 
-                        Land
-                       @elseif(request('type') == 1 ) 
-                        Apartment
-                       @elseif(request('type') == 2 ) 
-                        Villa
-                        @elseif(request('type') == '' ) 
-                        All
-                       @endif
-                    </h2>
-                    <span class="ipn-subtitle">Property List With Sidebar</span>
-                    
+            <div class="content-box centred">
+                <div class="title">
+                    <h1>Property 
+                    @php
+                        $types = [
+                            0 => 'Land',
+                            1 => 'Apartment',
+                            2 => 'Villa',
+                        ];
+                    @endphp
+
+                    {{ $types[request('type')] ?? 'All' }}
+                    </h1>
                 </div>
+                <ul class="bread-crumb clearfix">
+                    <li><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to ListIt." href="{{route('home')}}" class="home"><span property="name">Home</span></a><meta property="position" content="1"></span></li><li>/</li><li>
+                     Property 
+                    @php
+                        $types = [
+                            0 => 'Land',
+                            1 => 'Apartment',
+                            2 => 'Villa',
+                        ];
+                    @endphp
+
+                    {{ $types[request('type')] ?? 'All' }}
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-    <section class="bg-light">
+    </section>
+
+    <section class="sidebar-page-container bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12 property-sidebar">
@@ -30,8 +43,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-md-12">
                             <div class="item-shorting-box">
-                                <div class="item-shorting clearfix">
-                                    <div class="left-column pull-left"><h4 class="m-0">Found 1-10 of 142 Results</h4></div>
+                                <div class="item-shorting-box-left">
+                                    <h4>Found 1-10 of 142 Results</h4>
                                 </div>
                                 <div class="item-shorting-box-right">
                                     <div class="shorting-by">

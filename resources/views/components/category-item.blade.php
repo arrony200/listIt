@@ -3,7 +3,7 @@
         <div class="inner-box">
             <figure class="image-box">
                 <a href="{{route('properties')}}?cat={{$category->id}}">
-                    <img width="175" height="175" src="https://picsum.photos/175/175" class="attachment-full size-full" alt="" decoding="async">
+                    <img src="{{ $category->image }}"/>
                 </a>
                 <span>1 Listings</span>
             </figure>

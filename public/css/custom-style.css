@@ -1476,9 +1476,11 @@
     padding-top: 80px;
     padding-bottom: 70px;
     width: 100%;
+    background-image: url(../img/blog-bradcamb.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
   }
   .page-title-bg {
     background-color: rgba(32,7,11,.8);
@@ -3108,6 +3110,7 @@
     color: #000;
     line-height: 36px;
     margin-bottom: 25px;
+    text-transform: capitalize;
   }
   .pricing-block-one .teble-header p {
     margin-bottom: 25px;
@@ -3131,6 +3134,7 @@
     line-height: 20px;
     color: #676767;
   }
+  .pricing-block-one .table-content *,
   .pricing-block-one .table-content ul li {
     color: #595959;
     font-size: 15px;
@@ -3150,12 +3154,10 @@
     margin-bottom: 10px;
   }
   .pricing-block-one .table-content ul li:before {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>');
-    background-repeat: no-repeat;
-    background-position-x: 1px;
-    background-position-y: 1px;
     position: absolute;
-    content: "";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* solid icons */
+    content: "\f00c"; /* check icon */
     left: 0;
     width: 20px;
     height: 20px;
@@ -3194,6 +3196,7 @@
     color: #fff;
   }
   .pricing-block-one.featured-active .teble-header p,
+  .pricing-block-one.featured-active .table-content *,
   .pricing-block-one.featured-active .table-content ul li{
     color: rgba(222, 219, 219, 1);
   }
@@ -4454,6 +4457,7 @@
 .category-block-two .inner-box .lower-content h4 a {
     display: block;
     color: #133256;
+    text-transform: capitalize;
 }
 .category-block-two .inner-box:hover .image-box img {
     transform: scale(1);
@@ -4504,6 +4508,7 @@
     line-height: 28px;
     font-weight: 700;
     margin-bottom: -25px;
+    text-transform: capitalize;
 }
 .place-block-one .inner-box .lower-content .inner h3 a {
     display: inline-block;
@@ -4676,6 +4681,7 @@
 }
 .review-box-footer img {
     margin: 0 auto;
+    border-radius: 50%;
 }
 .footer-top {
     background-color: #18181C;
@@ -4686,5 +4692,96 @@
 }
 .widget-section {
     display: flex;
-    /* flex-wrap: wrap; */
+}
+.newsletter-section {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 60px 40px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+}
+.newsletter-section h1 {
+    color: #1e3a5f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.description {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subscription-form {
+    display: flex;
+    gap: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.email-input-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px 0 0 10px;
+    padding: 0 20px;
+}
+.email-icon {
+    color: #999;
+    margin-right: 12px;
+    font-size: 20px;
+}
+.email-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 18px 0;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+.email-input::placeholder {
+    color: #999;
+}
+.subscribe-btn {
+    background: linear-gradient(135deg, #f05a7e 0%, #e63958 100%);
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    margin: 0;
+}
+.subscribe-btn:hover {
+    background: linear-gradient(135deg, #e63958 0%, #d42f4c 100%);
+    box-shadow: 0 5px 15px rgba(224, 57, 88, 0.4);
+}
+
+@media (max-width: 600px) {
+    .newsletter-section {
+        padding: 40px 25px;
+    }
+    .newsletter-section h1 {
+        font-size: 2rem;
+    }
+    .subscription-form {
+        flex-direction: column;
+    }
+    .email-input-wrapper {
+        border-radius: 10px;
+    }
+    .subscribe-btn {
+        border-radius: 10px;
+        margin-top: 10px;
+    }
 }

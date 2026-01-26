@@ -33,10 +33,10 @@
                     <div class="single-box">
                     <h3>Social contact</h3>
                     <ul class="social-icons clearfix">
-                    <li class="facebook"><a href="#"><i aria-hidden="true" class="lab la-facebook-f"></i></a></li>
-                    <li class="twitter"><a href="#"><i aria-hidden="true" class="lab la-twitter"></i></a></li>
-                    <li class="linkedin"><a href="#"><i aria-hidden="true" class="lab la-linkedin-in"></i></a></li>
-                    <li class="instagram"><a href="#"><i aria-hidden="true" class="lab la-instagram"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     </div>
                     </div>

@@ -48,10 +48,10 @@
                         </div>
                         <div class="download-btn">
                             <a href="#" class="app-store">
-                                <img decoding="async" src="https://listit.smartdemowp.com/wp-content/uploads/play-store.png" alt="">
+                                <img decoding="async" src="/img/play-store.png" alt="">
                             </a>
                             <a href="#" class="app-store">
-                                <img decoding="async" src="https://listit.smartdemowp.com/wp-content/uploads/google-play.png" alt="">
+                                <img decoding="async" src="/img/google-play.png" alt="">
                             </a>
                         </div>
                     </div>

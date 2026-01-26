@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 use App\Models\Page;
@@ -24,13 +23,6 @@ class DatabaseSeeder extends Seeder
         $page->content = 'lorem';
         $page->save();
 
-        $page = new Page();
-        $page->name = 'About Us';
-        $page->slug = 'about-us';
-        $page->content = 'lorem';
-        $page->save();
-
-
         $user = new User();
         $user->name = 'AR RONY';
         $user->email = 'arrony200@mail.com';
@@ -45,5 +37,6 @@ class DatabaseSeeder extends Seeder
         \App\Models\Property::factory(50)->create();
         \App\Models\Media::factory(550)->create();
         \App\Models\PricingPlan::factory(3)->create();
+        \App\Models\Testimonial::factory(5)->create();
     }
 }

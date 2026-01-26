@@ -511,7 +511,6 @@ span.shortby {
 }
 .property-listing.property-grid-two {
   padding: 10px;
-  margin-bottom: 0;
 }
 .featured_slick_gallery {
   position: relative;
@@ -1492,4 +1491,21 @@ span._list_blickes.conditions.close-now {
 }
 .listing-short-detail {
     margin-bottom: 20px;
+}
+.item-shorting-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-shorting-box-left h4 {
+    font-size: 15px;
+    font-weight: 700;
+}
+.sidebar-page-container {
+    position: relative;
+    padding: 120px 0px 120px;
+}
+.form-group input,
+.form-group select {
+    width: 100%;
 }

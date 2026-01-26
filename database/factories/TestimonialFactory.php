@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -16,8 +15,8 @@ class TestimonialFactory extends Factory
         return [
             'name' => $this->faker->word,
             'designation' => $this->faker->word,
-            'review' => $this->faker->text(100),
-            'image' => 'https://picsum.photos/200/300',
+            'review' => $this->faker->text(200),
+            'image' => 'https://picsum.photos/50/50',
         ];
     }
 }

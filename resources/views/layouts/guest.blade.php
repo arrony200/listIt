@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/font-awesome-all.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" />
         <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="{{ asset('css/listing-style.css') }}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+
         <script src="{{ asset('js/owl.js') }}" defer></script>
         <script src="{{ asset('js/script.js') }}" defer></script>
     </head>

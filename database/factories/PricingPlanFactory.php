@@ -15,9 +15,9 @@ class PricingPlanFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'price' => rand(100000,500000),
+            'price' => rand(100,500),
             'description' => $this->faker->text(100),
-            'features' =>$this->faker->text(500),
+            'features' =>$this->faker->text(400),
         ];
     }
 }

@@ -3,7 +3,7 @@
         <div class="inner-box">
             <a href="{{route('properties')}}?location={{$location->id}}">
                 <figure class="image-box">
-                    <img loading="lazy" width="374" height="525" src="https://listit.smartdemowp.com/wp-content/uploads/location1.jpg" class="attachment-full size-full" alt decoding="async" />
+                    <img src="{{ $location->image }}"/>
                 </figure>
             </a>
             <div class="lower-content">

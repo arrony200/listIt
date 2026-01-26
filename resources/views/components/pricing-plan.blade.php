@@ -1,4 +1,4 @@
-@if($pricing->name =='Business')
+@if($pricing->id == 2)
     <div class="pricing-block-one featured-active">
 @else
     <div class="pricing-block-one">
@@ -7,15 +7,23 @@
         <div class="teble-header">
             <h5>{{ $pricing->name}}</h5>
             <p>{{ $pricing->description}}</p>
-            <h2><sup>$</sup>{{ $pricing->price}} <span>/ yr</span></h2>
+            <h2><sup>$</sup>{{ $pricing->price}} <span>/ mo</span></h2>
         </div>
         <div class="table-content">
             <h3>Everything in Starter</h3>
-            {{-- {{ $pricing->features}} --}}
-            {!! $pricing->features !!}
+            @php
+                $sentences = preg_split('/(?<=[.!?])\s+/', $pricing->features);
+            @endphp
+
+            <ul>
+                @foreach ($sentences as $sentence)
+                    <li>{{ $sentence }}</li>
+                @endforeach
+            </ul>
+            
         </div>
         <div class="table-footer">
-            <a href="https://listit.smartdemowp.com/primary-checkout-page/" class=" btn btn-default theme-btn-one">Register Now</a>
+            <a href="#" class=" btn btn-default theme-btn-one">Select This Plan</a>
         </div>
     </div>
 </div>

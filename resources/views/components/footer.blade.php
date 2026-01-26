@@ -3,8 +3,8 @@
         <div class="container widget-section">
             <div class="footer-widget logo-widget">
                 <figure class="footer-logo">
-                    <a href="https://listit.smartdemowp.com/">
-                        <img width="119" height="53" src="https://listit.smartdemowp.com/wp-content/uploads/logo-white.svg" class="attachment-full size-full" alt="" decoding="async" loading="lazy">
+                    <a href="#">
+                        <img width="119" height="53" src="/img/logo-white.svg" class="attachment-full size-full" alt="" decoding="async" loading="lazy">
                     </a>
                 </figure>
                 <div class="text">
@@ -13,10 +13,10 @@
                     <p>925 Bald Hill St, Asheville, NC 28803<br> info@listIt.com</p>
                 </div>
                 <ul class="social-links clearfix">
-                    <li><a href=""><i class="lab la-twitter"></i></a></li>
-                    <li><a href=""><i class="lab la-facebook-f"></i></a></li>
-                    <li><a href=""><i class="lab la-youtube"></i></a></li>
-                    <li><a href=""><i class="lab la-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
             <div class="footer-widget links-widget">
@@ -41,7 +41,6 @@
                 </div>
                 <div class="widget-content">
                     <ul class="links-list clearfix">
-                        <li><a href="#">About Us</a></li>
                         <li><a href="#">Investors</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Career</a></li>
@@ -75,16 +74,20 @@
         <div class="container">
             <div class="footer-inner clearfix">
                 <div class="copyright pull-left">
-                    <p> © 2022 Copyrights by <a href="#">ListIt Inc</a>. All Rights Reserved. </p>
+                    <p> © 2026 Copyrights by <a href="#">ListIt Inc</a>. All Rights Reserved. </p>
                 </div>
                 <ul class="footer-nav pull-right clearfix">
                     <li class="title">Payment Methods</li>
-                    <li><a href="#"><img src="https://listit.smartdemowp.com/wp-content/uploads/paypal.png" alt="Payment Icon"></a></li>
-                    <li><a href="#"><img src="https://listit.smartdemowp.com/wp-content/uploads/visa.png" alt="Payment Icon"></a></li>
-                    <li><a href="#"><img src="https://listit.smartdemowp.com/wp-content/uploads/s.png" alt="Payment Icon"></a></li>
-                    <li><a href="#"><img src="https://listit.smartdemowp.com/wp-content/uploads/pay.png" alt="Payment Icon"></a></li>
+                    <li><a href="#"><img src="/img/paypal.png" alt="Payment Icon"></a></li>
+                    <li><a href="#"><img src="/img/visa.png" alt="Payment Icon"></a></li>
+                    <li><a href="#"><img src="/img/s.png" alt="Payment Icon"></a></li>
+                    <li><a href="#"><img src="/img/pay.png" alt="Payment Icon"></a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
+<button class="scroll-top scroll-to-target" data-target="html">
+    <i class="las la-angle-up"></i>
+    <span>Top</span>
+</button> 
