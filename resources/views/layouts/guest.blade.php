@@ -15,12 +15,14 @@
         <link rel="stylesheet" href="{{ asset('css/owl.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/custom-style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/listing-style.css') }}">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Scripts -->
 
         <script src="{{ asset('js/owl.js') }}" defer></script>
+        <script src="{{ asset('js/select2.min.js') }}" defer></script>
         <script src="{{ asset('js/script.js') }}" defer></script>
     </head>
     <body>

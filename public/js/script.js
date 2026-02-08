@@ -142,6 +142,8 @@
 // $("[name=min]").val(min);
 // $("[name=max]").val(max);
 
+	// Select Property Types
+	$('.select2-active').select2();
 
 	// Scroll to a Specific Div
 	if($('.scroll-to-target').length){

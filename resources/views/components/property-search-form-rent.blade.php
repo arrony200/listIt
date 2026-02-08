@@ -7,7 +7,7 @@
         </div>
 
         <div class="form-group">
-            <select name="location">
+            <select name="location" class="select2-active">
                 <option value="">Location</option>
                 @foreach($locations as $location)
                 <option {{request('location') == $location->id ? 'selected="selected"' : ''}} value="{{$location->id}}">{{$location->name}}</option>
@@ -15,7 +15,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select name="type">
+            <select name="type" class="select2-active">
                 <option value="">Type</option>
                 <option {{request('type') == '0' ? 'selected="selected"' : ''}} value="0">Land</option>
                 <option {{request('type') == '1' ? 'selected="selected"' : ''}} value="1">Apartment</option>
@@ -23,7 +23,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select name="price">
+            <select name="price" class="select2-active">
                 <option value="">Price</option>
                 <option {{request('price') == '100000' ? 'selected="selected"' : ''}} value="100000">0 - 100000</option>
                 <option {{request('price') == '200000' ? 'selected="selected"' : ''}} value="200000">100000 - 200000</option>
@@ -34,7 +34,7 @@
             </select>
         </div>
         <div class="form-group">
-            <select id="bedrooms" name="bedrooms">
+            <select id="bedrooms" name="bedrooms" class="select2-active">
                 <option value="">Bedrooms</option>
                 <option {{request('bedrooms') == '1' ? 'selected="selected"' : ''}} value="1">1</option>
                 <option {{request('bedrooms') == '2' ? 'selected="selected"' : ''}} value="2">2</option>
